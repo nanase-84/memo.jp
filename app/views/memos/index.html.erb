@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+   <% content_for :title, "メモ一覧" %>
+  </head>
+  <body>
+    <div class="top-wrapper">
+    <div class="top-inner-text">
+      </html><p style="color: green"><%= notice %></p>
+
+      <h1>Memos</h1>
+
+    <div id="memos">
+      <% @memos.each do |memo| %>
+        <%= render memo %>
+      <p>
+        <%= link_to "Show this memo", memo %>
+      </p>
+      <% end %>
+    </div>
+
+    <%= link_to "New memo", new_memo_path %>
+    </div>
+    </div>
+  </body>
+</html>
