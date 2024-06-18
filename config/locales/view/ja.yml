@@ -32,6 +32,9 @@ ja:
   memos:
     index:
      title: Memos
+    new:
+      title: 新規作成
     show:
+      index: メモ詳細
       title: タイトル
       body: 本文
