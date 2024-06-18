@@ -1,0 +1,10 @@
+ja:
+  activerecord:
+    models:
+      user: 'ユーザー'
+      board: '掲示板'
+    attributes:
+      user:
+        email: 'メールアドレス'
+      new:
+        create: 新規作成

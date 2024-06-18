@@ -10,18 +10,19 @@
       </ul>
     </div>
   <% end %>
-
-  <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+<div class="text-center">
+  <div class="form-group">
+    <%= form.label :title, I18n.t('helpers.label.title') %>
+    <%= form.text_field :title, class: "form-control" %>
   </div>
 
-  <div>
-    <%= form.label :body, style: "display: block" %>
-    <%= form.text_field :body %>
+  <div class="form-group">
+    <%= form.label :body, I18n.t('helpers.label.body') %>
+    <%= form.text_field :body, class: "form-control" %>
   </div>
 
-  <div>
+  <div class="actions">
     <%= form.submit %>
   </div>
+</div>
 <% end %>

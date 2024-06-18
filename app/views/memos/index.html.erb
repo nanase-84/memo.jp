@@ -2,22 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8">
-   <% content_for :title, "メモ一覧" %>
+   <% content_for :title, I18n.t('memos.index.title') %>
   </head>
   <body>
     <div class="top-wrapper">
     <div class="top-inner-text">
       </html><p style="color: green"><%= notice %></p>
 
-      <h1>Memos</h1>
+      <h1><%= I18n.t('memos.index.title') %></h1>
 
     <div id="memos">
+      <ul style="list-style-type: none;">
       <% @memos.each do |memo| %>
-        <%= render memo %>
-      <p>
-        <%= link_to "Show this memo", memo %>
-      </p>
+      <li>
+        <%= link_to memo.title, memo_path(memo) %>
+      </li>
       <% end %>
+      </ul>
     </div>
     </div>
     </div>

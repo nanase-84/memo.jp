@@ -7,3 +7,9 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+20.times do |n|
+  Memo.create(
+    title: "タイトル#{n}",
+    body: "本文#{n}"
+  )
+end
